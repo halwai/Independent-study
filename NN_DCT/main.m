@@ -1,3 +1,5 @@
-[images_train, images_test, labels_train, labels_test] = load_dataset('mnist');
-[results_train] = compute_dct(images_train);
-[results_test] = compute_dct(images_test);
+[x_train, x_test, ~, ~] = load_dataset('mnist');
+[y_train] = compute_dct(x_train);
+[y_test] = compute_dct(x_test);
+
+save('data','y_train','y_test', 'x_train', 'x_test')
