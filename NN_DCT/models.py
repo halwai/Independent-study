@@ -4,11 +4,12 @@ import keras
 from keras.models import Sequential
 from keras.layers import Dense, Activation
 
-def layered_NN_1(input_dim, units, output_dim):
-    print(input_dim, units, output_dim)
+#flattened multiple fully-connected-layers
+def fc_NN_k(input_dim, hidden_units, output_dim):
+    print(input_dim, hidden_units, output_dim)
     model = Sequential()
-    model.add(Dense(units, activation='relu', input_shape=(input_dim,), kernel_initializer='he_normal') )
+    model.add(Dense(hidden_units[0], activation='relu', input_shape=(input_dim,), kernel_initializer='he_normal') )
+    for i in range(1,len(hidden_units),1):
+        model.add(Dense(hidden_units[i], activation='relu', kernel_initializer='he_normal') )
     model.add(Dense(output_dim, kernel_initializer='he_normal'))
-
     return model
-
