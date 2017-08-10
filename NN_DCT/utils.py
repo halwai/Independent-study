@@ -16,6 +16,7 @@ def img_2_dct(images, input_size, rgb=True):
 
     return (final_images, output_images)
 
+
 def load_dataset(data_string, flatten):
     if data_string =='mnist':
         (x_train_temp, _ ), (x_test_temp, _ ) = mnist.load_data()
@@ -32,7 +33,6 @@ def load_dataset(data_string, flatten):
             y_train = np.reshape(y_train, [train_shape[0], -1])
             x_test  = np.reshape(x_test, [test_shape[0], -1])
             y_test  = np.reshape(y_test, [test_shape[0], -1])
-
 
     elif data_string =='cifar10':
         (x_train_temp, _ ), (y_train_temp, _) = cifar10.load_data()

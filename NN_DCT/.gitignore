@@ -1,2 +1,5 @@
+*.pickle
 *.pyc
 temp.h5
+model-weights*
+.ipynb_checkpoints/
