@@ -28,7 +28,7 @@ dataset = 'mnist'
 
 # only considering flattened models (only fc layers) for now
 input_dims = np.shape(x_train)[1] 
-hidden_units = [784]
+hidden_units = [100]
 
 
 #define the model

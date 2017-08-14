@@ -1,3 +1,5 @@
+train/
+test/
 *.pickle
 *.pyc
 temp.h5
