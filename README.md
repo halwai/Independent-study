@@ -20,7 +20,7 @@ Independent-study
     + Only first quadrant of the DCT is effeciently captured while minimizing loss.
     + Data-Augmentations is not possible since DCT of the image will change
     + Visualizing the weights of the learned Neural Networks do not provide any specific information
-    + Example images depicting the same phenomenon can be seen [image1]() [image2]()
+    + Example images depicting the same phenomenon can be seen [image1](week/1.png) [image2](week2/2.png)
     + Lets forget about DCT and try to run an autoencoder.
 
 ### Week 2 - Probing Discrete Cosine Transfomation in Images to learn about the coherence/meaning of weights learned by Neural Nets for such transformations
