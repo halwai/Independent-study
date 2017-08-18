@@ -23,7 +23,7 @@ Independent-study
     + Example images depicting the same phenomenon can be seen [image1](week1/1.png) [image2](week1/2.png)
     + Lets forget about DCT and try to run an autoencoder.
 
-### Week 2 - Probing Discrete Cosine Transfomation in Images to learn about the coherence/meaning of weights learned by Neural Nets for such transformations
+### Week 2 - Probing encoder, decoder weights in autoencoder. Can these be transformed from one to another without learning one of them.
 1. Basic Idea
 	+ Train an Autoencoder for images (same image as input/output). Can these learned represenations be learned in half the weights?
 	+ i.e. Train only the encoding part, can the decoding part be made just using the weights from the encoding part, with some simple transformation, manipulations.
